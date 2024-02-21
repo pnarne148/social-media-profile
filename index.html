@@ -10,13 +10,99 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: 'customFont';
+      src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    }
+
+    .attribution { 
+      color: white;
+      text-align: center;
+      font-size: small;
+      position: absolute;
+      bottom: 1%;
+      width: 100%;
+     }
+    .attribution a { color: hsl(227, 45%, 73%); }
+
+    body{
+      margin: 0%;
+      padding: 0%;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #141414;
+    }
+
+    .card{
+      width: 320px;
+      height: auto;
+      background-color: #1F1F1F;
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: "custonFont";
+      /* display: none; */
+    }
+
+    img {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .name{
+      color: white;
+      margin-top: 20px;
+      font-family: "customFont";
+      font-size: x-large;
+      margin-bottom: 0%;
+    }
+
+    .place {
+      color: #CBE27A;
+      font-family: "customFont";
+      margin-bottom: 0%;
+      margin-top: 4px;
+      font-size: small;
+    }
+
+    .description {
+      color: white;
+      font-family: "customFont";
+      margin-bottom: 20px;
+      margin-top: 30px;
+      font-size: small;
+    }
+
+    button{
+      color: white;
+      background-color: #333333;
+      padding: 15px;
+      margin-bottom: 12px;
+      width: 90%;
+      height: auto;
+      border-radius: 7px;
+      border: none;
+      font-family: "customFont";
+      
+    }
+
+    button:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      color: #636262;
+    }
+
+
   </style>
 </head>
 <body>
 
-  Jessica Randall
+  <!-- Jessica Randall
   London, United Kingdom
   "Front-end developer and avid reader."
 
@@ -24,7 +110,22 @@
   Frontend Mentor
   LinkedIn
   Twitter
-  Instagram
+  Instagram -->
+
+  <div class = "card">
+    <img src = "assets\images\avatar-jessica.jpeg"/>
+
+    <p class = "name">Jessica Randall</p>
+    <b class = "place">London, United Kingdom</b>
+    <p class = "description">"Front-end developer and avid reader."</p>
+
+    <button>Frontend mentor</button>
+    <button>Github</button>
+    <button>LinkedIn</button>
+    <button>Instagram</button>
+    <button>X</button>
+
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
